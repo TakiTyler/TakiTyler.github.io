@@ -6,11 +6,12 @@
     padding: 0;
 }
 
-:root{
+:root {
     --background: #121212;
     --surface: #242424;
     --text: #f2f2f2;
-    --links: hsl(0, 0%, 85%);
+    --links: #d9d9d9;
+    --borders: #ffffff1a;
     --blue: #4169e1;
     --blue-light: #7a96ea;
     --blue-lightest: #b3c3f3;
@@ -33,7 +34,7 @@ header {
     padding-bottom: 10px;
     justify-content: space-between;
     margin: auto;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid var(--borders);
     align-items: center;
     color: var(--text);
 
@@ -44,7 +45,7 @@ header {
     button {
         margin-right: 10px;
     }
-    
+
     ul {
         display: flex;
         list-style: none;
@@ -56,26 +57,97 @@ header {
         display: inline-block;
 
         a {
+            display: inline-block;
             padding: 10px;
             text-decoration: none;
             color: var(--links);
 
             &:hover {
-                text-decoration: underline;
                 background-color: var(--surface);
                 border-radius: 5%;
             }
         }
     }
-}
 
-.main_div{
-    display: flex;
-
-    div{
+    #color_toggle {
+        padding: 10px;
         color: var(--text);
     }
-    
+
+    #burger_menu {
+        display: none;
+        padding: 10px;
+        color: var(--text);
+
+        @media (max-width: 768px) {
+            display: inline-block;
+            position: absolute;
+            top: 15px;
+            right: 20px;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+
+        #color_toggle{
+            position: absolute;
+            top: 15px;
+            right: 20px;
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        flex-direction: column;
+        align-items: center;
+
+        nav {
+            width: 100%;
+            margin-top: 10px;
+
+            ul {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+
+                li {
+                    width: 100%;
+
+                    a {
+                        width: 100%;
+                    }
+                }
+
+                &.active {
+                    display: flex;
+                }
+            }
+        }
+
+        #color_toggle {
+            display: none;
+            width: 100%;
+            align-items: center;
+            position: static;
+
+            &.active {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+    }
+}
+
+.main_div {
+    display: flex;
+
+    div {
+        color: var(--text);
+    }
+
     #photo {
         padding: 20px;
     }

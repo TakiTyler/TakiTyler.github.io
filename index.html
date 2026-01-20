@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,8 +14,10 @@
 
     <link rel="icon" type="image/png" href="images/kuribo_square.png">
 </head>
+
 <body>
-    <!-- https://takityler.github.io/ -->
+    <!-- https://takityler.github.io/ website link -->
+    <!-- based on this guide: https://youtu.be/O3m-OMfYgW8?si=P2RhC5wFdcHV0xco -->
     <header>
         <h1>Tyler's Portfolio</h1>
         <nav>
@@ -24,7 +27,25 @@
                 <li><a href="#">Contact me</a></li>
             </ul>
         </nav>
-        <button>Dark Mode</button>
+        <a href="#" id="color_toggle" onclick="switch_colors();">
+            <svg id="moon" class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 21a9 9 0 0 1-.5-17.986V3c-.354.966-.5 1.911-.5 3a9 9 0 0 0 9 9c.239 0 .254.018.488 0A9.004 9.004 0 0 1 12 21Z" />
+            </svg>
+
+            <svg id="sun" class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 5V3m0 18v-2M7.05 7.05 5.636 5.636m12.728 12.728L16.95 16.95M5 12H3m18 0h-2M7.05 16.95l-1.414 1.414M18.364 5.636 16.95 7.05M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" />
+            </svg>
+        </a>
+        <a href="#" id="burger_menu" onclick="mobile_menu_toggle();">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" />
+            </svg>
+        </a>
     </header>
 
     <div class="main_div">
@@ -36,7 +57,7 @@
         <div id="photo">
             <img src="images/kuribo_square.png" width="200">
         </div>
-        
+
         <p>
             Hello there
         </p>
@@ -44,4 +65,5 @@
 
     <script src="scripts.js"></script>
 </body>
+
 </html>
