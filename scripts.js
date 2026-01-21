@@ -10,6 +10,24 @@ function mobile_menu_toggle(){
 
 // checks the user's color preference of light or dark mode
 function find_color_preference(){
+
+    const color_preference = localStorage.getItem('color-preference');
+
+    if(color_preference == 'dark'){
+        console.log("User prefers dark mode");
+        localStorage.setItem('color-preference', 'dark');
+        set_color_mode('dark');
+        return;
+    }
+    else if(color_preference == 'light'){
+        console.log("User prefers light mode");
+        localStorage.setItem('color-preference', 'light');
+        set_color_mode('light');
+        return;
+    }
+
+    // everything below runs if the user hasn't set their color preference before
+
     const prefers_dark_mode = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
     console.log(prefers_dark_mode);

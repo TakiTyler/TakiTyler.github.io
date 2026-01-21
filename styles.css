@@ -26,10 +26,12 @@ body {
     font-style: normal;
     font-size: 20px;
     background-color: var(--background);
+    transition: ease 0.3s all;
 }
 
 header {
     display: flex;
+    max-width: 1440px;
     padding-top: 10px;
     padding-bottom: 10px;
     justify-content: space-between;
@@ -90,7 +92,7 @@ header {
     @media (max-width: 1024px) {
         flex-direction: column;
 
-        #color_toggle{
+        #color_toggle {
             position: absolute;
             top: 15px;
             right: 20px;
@@ -114,9 +116,14 @@ header {
 
                 li {
                     width: 100%;
+                    border-radius: 0px;
 
                     a {
                         width: 100%;
+
+                        &:hover {
+                            border-radius: 0%;
+                        }
                     }
                 }
 
@@ -141,14 +148,66 @@ header {
     }
 }
 
-.main_div {
-    display: flex;
+main {
+    section {
+        display: flex;
+        max-width: 1440px;
+        padding: 10px;
+        margin: auto;
+        gap: 25px;
 
-    div {
-        color: var(--text);
+        @media (max-width: 1024px) {
+            flex-direction: column;
+        }
     }
 
-    #photo {
+
+    .yapping {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--surface);
+        color: var(--text);
         padding: 20px;
+        border-radius: 25px;
+        flex: 1;
+    }
+
+    .photo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--blue);
+        color: var(--text);
+        padding: 20px;
+        border-radius: 25px;
+        flex: 1;
+        width: 100%;
+    }
+
+    .socials{
+        display: inline-block;
+        
+        a{
+            color: var(--text);
+            text-decoration: none;
+        }
+    }
+}
+
+.button-like {
+    background-color: var(--purple-lightest);
+    color: var(--surface);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    transition: ease 0.3s all;
+
+    &:hover {
+        border-radius: 15px;
+        background-color: var(--links);
     }
 }
