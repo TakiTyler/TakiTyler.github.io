@@ -82,10 +82,12 @@ function set_color_mode(color){
         sun_icon.style.display = 'inline-block';
 
         root_element.style.setProperty('--background', '#ffffff');
-        root_element.style.setProperty('--surface', '#d9d9d9');
+        root_element.style.setProperty('--surface', '#ededed');
+        root_element.style.setProperty('--inner-surface', '#dbdbdb')
         root_element.style.setProperty('--text', '#121212');
         root_element.style.setProperty('--links', '#242424');
         root_element.style.setProperty('--borders', '#d9d9d9');
+        root_element.style.setProperty('--blue', '#b3c3f3');
     }
     else if(color == 'dark'){
         moon_icon.style.display = 'inline-block';
@@ -93,8 +95,10 @@ function set_color_mode(color){
         
         root_element.style.setProperty('--background', '#121212');
         root_element.style.setProperty('--surface', '#242424');
+        root_element.style.setProperty('--inner-surface', '#363636')
         root_element.style.setProperty('--text', '#f2f2f2');
         root_element.style.setProperty('--links', '#d9d9d9');
         root_element.style.setProperty('--borders', '#ffffff1a');
+        root_element.style.setProperty('--blue', '#4169e1');
     }
 }
