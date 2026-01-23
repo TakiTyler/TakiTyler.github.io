@@ -14,11 +14,13 @@
     --links: #d9d9d9;
     --borders: #ffffff1a;
     --blue: #4169e1;
-    --blue-light: #7a96ea;
-    --blue-lightest: #b3c3f3;
+    --blue-light: #6687e7;
+    --blue-lightest: #8da5ed;
+    --blue-lightestest: #b3c3f3;
     --purple: #e141d9;
-    --purple-light: #ea7ae4;
-    --purple-lightest: #f3b3ef;
+    --purple-light: #e766e0;
+    --purple-lightest: #ed8de8;
+    --purple-lightestest: #f3b3ef;
 }
 
 body {
@@ -176,7 +178,10 @@ main {
         }
     }
 
-    .yapping, .about-me, .skills {
+    .yapping,
+    .about-me,
+    .skills,
+    .experiences {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -193,15 +198,14 @@ main {
         }
     }
 
-    .about-me, .skills{
-        h2{
+    .about-me,
+    .skills,
+    .experiences {
+        h2 {
             font-size: 48px;
             text-align: center;
+            margin-bottom: 20px;
         }
-    }
-
-    .skills{
-        display: inline-block;
     }
 
     .personal-links {
@@ -257,31 +261,153 @@ main {
         }
     }
 
-    .skill-section{
-        background-color: var(--inner-surface);
-        align-self: center;
-        width: 100%;
-        max-width: 360px;
+    .skills {
+        .skill-list {
+            display: grid;
+            gap: 30px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
 
-        h3, h4{
-            text-align: center;
-        }
-
-        ul{
-            list-style: none;
-            list-style-position: inside;
-            li{
-                display: inline-block;
-                background-color: var(--blue);
-                padding: 10px 20px;
+            .skill-selection {
+                background-color: var(--inner-surface);
+                align-self: center;
+                width: 100%;
+                height: 100%;
+                padding: 25px;
                 border-radius: 15px;
-                margin: 5px;
 
+                h2 {
+                    font-size: 36px;
+                    text-decoration: underline;
+                }
+
+                h3 {
+                    text-align: center;
+                    font-size: 28px;
+                }
+
+                ul {
+                    list-style: none;
+                    list-style-position: inside;
+                    text-align: center;
+                    margin-bottom: 20px;
+
+                    li {
+                        display: inline-block;
+                        background-color: var(--blue);
+                        padding: 10px 20px;
+                        border-radius: 15px;
+                        margin: 5px;
+                        box-shadow:
+                            0 1px 1px hsl(0deg 0% 0% / 0.075),
+                            0 2px 2px hsl(0deg 0% 0% / 0.075),
+                            0 4px 4px hsl(0deg 0% 0% / 0.075),
+                            0 8px 8px hsl(0deg 0% 0% / 0.075),
+                            0 16px 16px hsl(0deg 0% 0% / 0.075);
+                    }
+                }
+
+                &:nth-child(1) {
+                    grid-column: span 1;
+                    grid-row: span 2;
+                }
+
+                &:nth-child(2) {
+                    grid-column: span 1;
+                    grid-row: span 1;
+                }
+
+                &:nth-child(3) {
+                    grid-column: span 1;
+                    grid-row: span 1;
+                }
+            }
+
+            @media (max-width: 1024px) {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(1, 1fr);
             }
         }
     }
 
-    .purple{
+    .separator{
+        background-color: var(--inner-surface);
+        align-self: center;
+        width: 100%;
+        height: 100%;
+        padding: 25px;
+        border-radius: 15px;
+        margin-top: 10px;
+
+        h2 {
+            font-size: 36px;
+            text-decoration: underline;
+        }
+    }
+
+    .experience-information {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 30px;
+
+        div {
+            padding: 25px;
+            /* background-color: red; */
+        }
+
+        #mitsu{
+            grid-column: span 5;
+            grid-row: span 3;
+        }
+
+        #fainman{
+            grid-column: span 3;
+            grid-row: span 2;
+        }
+
+        #polly{
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+
+        #utau{
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+
+        #rc{
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+
+        #sd{
+            grid-column: span 3;
+            grid-row: span 1;
+        }
+
+        #pocket{
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        #gorilla{
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+
+        #enterprise{
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+
+        #alg{
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+    }
+
+    .purple {
         color: var(--purple-light);
     }
 
@@ -298,7 +424,8 @@ main {
 
     &:hover {
         border-radius: 15px;
-        background-color: var(--links);
+        background-color: var(--text);
+        color: var(--background);
     }
 
     &.white {
@@ -306,7 +433,7 @@ main {
         color: var(--background);
 
         &:hover {
-            color: var(--background);
+            color: #121212;
             background-color: var(--purple-lightest);
         }
     }
@@ -316,7 +443,7 @@ main {
         color: var(--text);
 
         &:hover {
-            color: var(--background);
+            color: #121212;
             background-color: var(--purple-lightest);
         }
     }

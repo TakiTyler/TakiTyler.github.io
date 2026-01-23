@@ -22,10 +22,10 @@
         <h1>Tyler's Portfolio</h1>
         <nav>
             <ul id="header_menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About me</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About-Me">About me</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Experience">Experience</a></li>
                 <li><a href="#" class="button-like">Contact me</a></li>
             </ul>
         </nav>
@@ -51,7 +51,7 @@
     </header>
 
     <main>
-        <section class="intro">
+        <section class="intro" id="Home">
             <div class="yapping">
                 <h2><small>Hello! I'm </small>Tyler Takimoto</h2>
                 <p>A college student with a passion for programming & software engineering.
@@ -68,10 +68,13 @@
                 </div>
                 <div class="socials">
                     <a href="https://github.com/TakiTyler" target="_blank">
-                        <img src="images/icons/github-original-wordmark.svg" alt="Github">
+                        <img src="images/icons/github-original.svg" alt="Github">
                     </a>
                     <a href="https://linkedin.com/in/tyler-takimoto-a35571300" target="_blank">
                         <img src="images/icons/linkedin-original.svg" alt="Linkedin">
+                    </a>
+                    <a href="https://ucf.joinhandshake.com/profiles/rwja5r" target="_blank">
+                        <img src="images/icons/Handshake_avatar_square.png" alt="Handshake">
                     </a>
                     <a href="https://leetcode.com/u/takimototyler/" target="_blank">
                         <img src="images/icons/leetcode-original.svg" alt="Leetcode">
@@ -83,7 +86,7 @@
                 <img src="images/photos/headshot.png" width="100%" alt="Tyler Takimoto">
             </div>
         </section>
-        <section>
+        <section id="About-Me">
             <div class="about-me">
                 <h2>About me</h2>
                 <p>Hi I'm Tyler Takimoto, a <strong>University of Central Florida</strong> student
@@ -100,62 +103,160 @@
                 </p>
             </div>
         </section>
-        <section>
+        <section id="Skills">
             <div class="skills">
                 <h2>Skills</h2>
-                <div class="skill-section">
-                    <h3>Software</h3>
+                <div class="skill-list">
+                    <div class="skill-selection">
+                        <h2>Software</h2>
 
-                    <h4>Front-end</h4>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JS</li>
-                        <li>React</li>
-                        <li>Flutter</li>
-                    </ul>
+                        <h3>Languages</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>C</li>
+                            <li>C++</li>
+                            <li>SQL</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JS</li>
+                            <li>RAPID</li>
+                        </ul>
 
-                    <h4>Back-end</h4>
-                    <ul>
-                        <li>Python</li>
-                        <li>Java</li>
-                        <li>C</li>
-                        <li>MySQL</li>
-                    </ul>
+                        <h3>Frameworks</h3>
+                        <ul>
+                            <li>React TS</li>
+                            <li>Flutter</li>
+                            <li>PyTorch</li>
+                            <li>NumPy</li>
+                            <li>Tkinter</li>
+                        </ul>
 
-                    <h4>Libraries</h4>
-                    <ul>
-                        <li>PyTorch</li>
-                        <li>NumPy</li>
-                        <li>Google Gemini</li>
-                        <li>ChatGPT</li>
-                    </ul>
+                        <h3>Machine Learning</h3>
+                        <ul>
+                            <li>Computer Vision</li>
+                            <li>Data Visualization</li>
+                            <li>Supervised Learning</li>
+                        </ul>
+
+                        <h3>Tools</h3>
+                        <ul>
+                            <li>GitHub</li>
+                            <li>GitHub Actions</li>
+                            <li>Digital Ocean</li>
+                            <li>Gunicorn</li>
+                            <li>Robot Studio</li>
+                            <li>VSCode</li>
+                            <li>TI CCS</li>
+                            <li>LaTeX</li>
+                            <li>YAML</li>
+                        </ul>
+                    </div>
+                    <div class="skill-selection">
+                        <h2>Electrical</h2>
+                        <ul>
+                            <li>Embedded Systems</li>
+                            <li>PCB Design</li>
+                            <li>Circuit Design</li>
+                            <li>Microcontrollers</li>
+                            <li>Fusion360</li>
+                            <li>Soldering</li>
+                            <li>Communication Protocols</li>
+                            <li>LTSpice</li>
+                        </ul>
+                    </div>
+                    <div class="skill-selection">
+                        <h2>Workspace</h2>
+                        <ul>
+                            <li>Project Leadership</li>
+                            <li>Public Speaking</li>
+                            <li>Gantt Charts</li>
+                            <li>Cross-Disciplinary Collaboration</li>
+                            <li>Microsoft Power Automate</li>
+                            <li>Microsoft Excel</li>
+                        </ul>
+                    </div>
                 </div>
-
-                <div class="skill-section">
-                    <h3>Electrical</h3>
-                    <ul>
-                        <li>Fusion360</li>
-                        <li>Soldering</li>
-                        <li>PCB Design</li>
-                        <li>Circuit Design</li>
-                        <li>Embedded Systems</li>
-                        <li>Arduino</li>
-                    </ul>
+            </div>
+        </section>
+        <section id="Experience">
+            <div class="experiences">
+                <h2>Experience</h2>
+                <div class="separator">
+                    <h2>Work</h2>
+                    <div class="experience-information">
+                        <div id="mitsu">
+                            <h3>Mitsubishi</h3>
+                            <p>I worked at Mitsubishi Power</p>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="skill-section">
-                    <h3>Workspace</h3>
-                    <ul>
-                        <li>Microsoft Office</li>
-                        <li>Microsoft Power Automate</li>
-                        <li>Microsoft PowerBI</li>
-                        <li>GIT</li>
-                        <li>Github</li>
-                        <li>Project Leadership</li>
-                    </ul>
+                <div class="separator">
+                    <h2>Outside Projects</h2>
+                    <div class="experience-information">
+                        <div id="fainman">
+                            <h3>Fainman</h3>
+                            <p>Hello</p>
+                        </div>
+                        <div id="polly">
+                            <h3>Polly the Parrot</h3>
+                            <p>Helloing</p>
+                        </div>
+                        <div id="utau">
+                            <h3>UTAU voice translator</h3>
+                            <p>Helloing</p>
+                        </div>
+                        <div id="rc">
+                            <h3>Knights RC Derby</h3>
+                            <p>Helloing</p>
+                        </div>
+                        <div id="duck">
+                            <h3>Cyber Duck</h3>
+                            <p>Helloing</p>
+                        </div>
+                        <div id="py-workshop">
+                            <h3>Python Workshop</h3>
+                            <p>Helloing</p>
+                        </div>
+                        <div id="sumo">
+                            <h3>Sumo Bots</h3>
+                            <p>Helloing</p>
+                        </div>
+                    </div>
                 </div>
-
+                <div class="separator">
+                    <h2>Class Projects</h2>
+                    <div class="experience-information">
+                        <div id="sd">
+                            <h3>Senior Design</h3>
+                            <p>Helloing</p>
+                        </div>
+                        <div id="pocket">
+                            <h3>Pocket Professors</h3>
+                            <p>Hello</p>
+                        </div>
+                        <div id="gorilla">
+                            <h3>100 CS Majors vs. Gorilla</h3>
+                            <p>Helloing</p>
+                        </div>
+                        <div id="jd">
+                            <h3>Junior Design</h3>
+                            <p>Helloing</p>
+                        </div>
+                        <div id="os">
+                            <h3>Operating Systems</h3>
+                            <p>Helloing</p>
+                        </div>
+                        <div id="enterprise">
+                            <h3>Enterprise Computing</h3>
+                            <p>Helloing</p>
+                        </div>
+                        <div id="alg">
+                            <h3>Algorithms in Machine Learning</h3>
+                            <p>Helloing</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

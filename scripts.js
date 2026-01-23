@@ -87,8 +87,12 @@ function set_color_mode(color){
         root_element.style.setProperty('--text', '#121212');
         root_element.style.setProperty('--links', '#242424');
         root_element.style.setProperty('--borders', '#d9d9d9');
-        root_element.style.setProperty('--blue', '#b3c3f3');
-        // root_element.style.setProperty('--purple', '#ea7ae4');
+        root_element.style.setProperty('--blue', '#6687e7');
+        root_element.style.setProperty('--blue-light', '#8da5ed');
+        root_element.style.setProperty('--blue-lightest', '#b3c3f3');
+        root_element.style.setProperty('--purple', '#e766e0');
+        root_element.style.setProperty('--purple-light', '#ed8de8');
+        root_element.style.setProperty('--purple-lightest', '#f3b3ef');
     }
     else if(color == 'dark'){
         moon_icon.style.display = 'inline-block';
@@ -101,6 +105,10 @@ function set_color_mode(color){
         root_element.style.setProperty('--links', '#d9d9d9');
         root_element.style.setProperty('--borders', '#ffffff1a');
         root_element.style.setProperty('--blue', '#4169e1');
-        // root_element.style.setProperty('--purple', '#e141d9');
+        root_element.style.setProperty('--blue-light', '#6687e7');
+        root_element.style.setProperty('--blue-lightest', '#8da5ed');
+        root_element.style.setProperty('--purple', '#e141d9');
+        root_element.style.setProperty('--purple-light', '#e766e0');
+        root_element.style.setProperty('--purple-lightest', '#ed8de8');
     }
 }
