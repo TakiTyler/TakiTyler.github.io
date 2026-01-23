@@ -176,7 +176,7 @@ main {
         }
     }
 
-    .yapping, .about-me {
+    .yapping, .about-me, .skills {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -193,11 +193,15 @@ main {
         }
     }
 
-    .about-me{
+    .about-me, .skills{
         h2{
             font-size: 48px;
             text-align: center;
         }
+    }
+
+    .skills{
+        display: inline-block;
     }
 
     .personal-links {
@@ -253,8 +257,32 @@ main {
         }
     }
 
+    .skill-section{
+        background-color: var(--inner-surface);
+        align-self: center;
+        width: 100%;
+        max-width: 360px;
+
+        h3, h4{
+            text-align: center;
+        }
+
+        ul{
+            list-style: none;
+            list-style-position: inside;
+            li{
+                display: inline-block;
+                background-color: var(--blue);
+                padding: 10px 20px;
+                border-radius: 15px;
+                margin: 5px;
+
+            }
+        }
+    }
+
     .purple{
-        color: var(--purple);
+        color: var(--purple-light);
     }
 
 }

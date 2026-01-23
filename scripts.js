@@ -88,6 +88,7 @@ function set_color_mode(color){
         root_element.style.setProperty('--links', '#242424');
         root_element.style.setProperty('--borders', '#d9d9d9');
         root_element.style.setProperty('--blue', '#b3c3f3');
+        // root_element.style.setProperty('--purple', '#ea7ae4');
     }
     else if(color == 'dark'){
         moon_icon.style.display = 'inline-block';
@@ -100,5 +101,6 @@ function set_color_mode(color){
         root_element.style.setProperty('--links', '#d9d9d9');
         root_element.style.setProperty('--borders', '#ffffff1a');
         root_element.style.setProperty('--blue', '#4169e1');
+        // root_element.style.setProperty('--purple', '#e141d9');
     }
 }
