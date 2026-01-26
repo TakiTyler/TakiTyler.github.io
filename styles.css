@@ -463,9 +463,46 @@ main {
 
         @media (max-width: 1024px) {
 
+            .company-info {
+                grid-column: span 6;
+            }
+
             .experience-description {
                 grid-column: span 6;
                 grid-row: span 1;
+            }
+
+            .company-logo {
+                display: none;
+            }
+        }
+
+        @media (max-width: 767px) {
+            p {
+                font-size: 12px;
+            }
+
+            h3 {
+                font-size: 20px;
+
+                short {
+                    font-size: 16px;
+                }
+            }
+
+            h4 {
+                font-size: 16px;
+            }
+
+            div {
+                ul {
+                    li {
+                        padding: 4px 8px;
+                        border-radius: 15px;
+                        margin: 1px;
+                        font-size: 10px;
+                    }
+                }
             }
         }
     }
@@ -510,5 +547,10 @@ main {
             color: #121212;
             background-color: var(--purple-lightest);
         }
+    }
+
+    @media (max-width: 767px) {
+        padding: 5px 10px;
+        font-size: 12px;
     }
 }
