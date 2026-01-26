@@ -10,6 +10,7 @@
     --background: #121212;
     --surface: #242424;
     --inner-surface: #363636;
+    --inner-inner-surface: #474747;
     --text: #f2f2f2;
     --links: #d9d9d9;
     --borders: #ffffff1a;
@@ -330,7 +331,7 @@ main {
         }
     }
 
-    .separator{
+    .separator {
         background-color: var(--inner-surface);
         align-self: center;
         width: 100%;
@@ -345,65 +346,127 @@ main {
         }
     }
 
-    .experience-information {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        gap: 30px;
+    #work {
+        --work-rows: 3;
 
-        div {
-            padding: 25px;
-            /* background-color: red; */
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(var(--work-rows), 1fr);
+        gap: 30px;
+    }
+
+    #outside {
+        --outside-rows: 3;
+
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(var(--outside-rows), 1fr);
+        gap: 30px;
+    }
+
+    #class {
+        --class-rows: 3;
+
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(var(--class-rows), 1fr);
+        gap: 30px;
+    }
+
+    .experience-information {
+
+        p {
+            margin-top: 0px;
         }
 
-        #mitsu{
-            grid-column: span 5;
+        h3 {
+            font-size: 30px;
+
+            short {
+                font-size: 24px;
+            }
+        }
+
+        h4 {
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+
+        div {
+            position: relative;
+            padding: 25px;
+            border-radius: 15px;
+            background-color: var(--inner-inner-surface);
+
+            ul {
+                list-style: none;
+                list-style-position: inside;
+
+                li {
+                    display: inline-block;
+                    background-color: var(--purple-lightest);
+                    color: #121212;
+                    padding: 5px 10px;
+                    border-radius: 15px;
+                    margin: 3px;
+                    font-size: 18px;
+                    box-shadow:
+                        0 1px 1px hsl(0deg 0% 0% / 0.075),
+                        0 2px 2px hsl(0deg 0% 0% / 0.075),
+                        0 4px 4px hsl(0deg 0% 0% / 0.075),
+                        0 8px 8px hsl(0deg 0% 0% / 0.075),
+                        0 16px 16px hsl(0deg 0% 0% / 0.075);
+                }
+            }
+
+            button {
+                margin-top: 20px;
+                background-color: var(--blue);
+                box-shadow:
+                    0 1px 1px hsl(0deg 0% 0% / 0.075),
+                    0 2px 2px hsl(0deg 0% 0% / 0.075),
+                    0 4px 4px hsl(0deg 0% 0% / 0.075),
+                    0 8px 8px hsl(0deg 0% 0% / 0.075),
+                    0 16px 16px hsl(0deg 0% 0% / 0.075);
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                &:active {
+                    background-color: var(--purple-lightest);
+                }
+            }
+        }
+
+        .company-info {
+            grid-column: span 4;
             grid-row: span 3;
         }
 
-        #fainman{
-            grid-column: span 3;
-            grid-row: span 2;
+        .company-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-column: span 2;
+            grid-row: span 3;
+
+            img {
+                width: 75%
+            }
         }
 
-        #polly{
+        .experience-description {
             grid-column: span 2;
             grid-row: span 1;
         }
 
-        #utau{
-            grid-column: span 2;
-            grid-row: span 1;
-        }
+        @media (max-width: 1024px) {
 
-        #rc{
-            grid-column: span 2;
-            grid-row: span 1;
-        }
-
-        #sd{
-            grid-column: span 3;
-            grid-row: span 1;
-        }
-
-        #pocket{
-            grid-column: span 2;
-            grid-row: span 2;
-        }
-
-        #gorilla{
-            grid-column: span 2;
-            grid-row: span 1;
-        }
-
-        #enterprise{
-            grid-column: span 2;
-            grid-row: span 1;
-        }
-
-        #alg{
-            grid-column: span 2;
-            grid-row: span 1;
+            .experience-description {
+                grid-column: span 6;
+                grid-row: span 1;
+            }
         }
     }
 
@@ -420,6 +483,7 @@ main {
     display: inline-block;
     padding: 10px 30px;
     border-radius: 15px;
+    border-width: 0px;
     transition: ease 0.3s all;
 
     &:hover {
