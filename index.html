@@ -187,7 +187,7 @@
                 <div class="separator">
                     <h2>Work</h2>
                     <div id="work" class="experience-information">
-                        <div class="company-info">
+                        <div id="mitsu" class="company-info">
                             <h3 class="project-title">Mitsubishi Power Americas</h3>
                             <h3><short>Role - Engineering Associate</short></h3>
                             <h3><short>From - May 2025 to Ongoing</short></h3>
@@ -207,7 +207,7 @@
                                 <li>Supervised Learning</li>
                                 <li>Robot Studio</li>
                             </ul>
-                            <button>More Details</button>
+                            <button id="mitsu-button" onclick="toggle_more_details('mitsu');">More Details</button>
                         </div>
 
                         <div class="company-logo">
@@ -219,7 +219,7 @@
                     <h2>Outside Projects</h2>
                     <div id="outside" class="experience-information">
                         <div id="fainman" class="experience-description">
-                            <h3 class="project-title">Fainman</h3>
+                            <h3 class="project-title">Fainman &#128218;</h3>
                             <h3><short>Role - Project Lead</short></h3>
                             <h3><short>From - Oct. 2025</short></h3>
                             <h4>Description</h4>
@@ -236,10 +236,10 @@
                                 <li>Google Gemini API</li>
                                 <li>Github</li>
                             </ul>
-                            <button>More Details</button>
+                            <button id="fainman-button" onclick="toggle_more_details('fainman');">More Details</button>
                         </div>
                         <div id="polly" class="experience-description">
-                            <h3 class="project-title">Polly the Parrot</h3>
+                            <h3 class="project-title">Polly the Parrot &#129436;</h3>
                             <h3><short>Role - Head Programmer</short></h3>
                             <h3><short>From - Oct. 2024</short></h3>
                             <h4>Description</h4>
@@ -255,10 +255,10 @@
                                 <li>OpenAI GPT-3.5</li>
                                 <li>IBM Watson</li>
                             </ul>
-                            <button>More Details</button>
+                            <button id="polly-button" onclick="toggle_more_details('polly');">More Details</button>
                         </div>
                         <div id="utau" class="experience-description">
-                            <h3 class="project-title">UTAU voice translator</h3>
+                            <h3 class="project-title">UTAU voice translator &#127908;</h3>
                             <h3><short>Role - Solo Developer</short></h3>
                             <h3><short>From - Dec. 2025</short></h3>
                             <h4>Description</h4>
@@ -271,10 +271,10 @@
                                 <li>Win32 API</li>
                                 <li>Github</li>
                             </ul>
-                            <button>More Details</button>
+                            <button id="utau-button" onclick="toggle_more_details('utau');">More Details</button>
                         </div>
                         <div id="rc" class="experience-description">
-                            <h3 class="project-title">Knights RC Derby</h3>
+                            <h3 class="project-title">Knights RC Derby &#x1F697;</h3>
                             <h3><short>Role - Programming Lead</short></h3>
                             <h3><short>From - Sept. 2023 to Nov. 2023</short></h3>
                             <h4>Description</h4>
@@ -287,10 +287,10 @@
                                 <li>Soldering</li>
                                 <li>Cross-Disciplinary Collaboration</li>
                             </ul>
-                            <button>More Details</button>
+                            <button id="rc-button" onclick="toggle_more_details('rc');">More Details</button>
                         </div>
                         <div id="duck" class="experience-description">
-                            <h3 class="project-title">Cyber Duck</h3>
+                            <h3 class="project-title">Cyber Duck &#129414;</h3>
                             <h3><short>Role - Terrestrial Team Member</short></h3>
                             <h3><short>From - Sept. 2024 to Apr. 2025</short></h3>
                             <h4>Description</h4>
@@ -303,10 +303,10 @@
                                 <li>Soldering</li>
                                 <li>Cross-Disciplinary Collaboration</li>
                             </ul>
-                            <button>More Details</button>
+                            <button id="duck-button" onclick="toggle_more_details('duck');">More Details</button>
                         </div>
                         <div id="py-workshop" class="experience-description">
-                            <h3 class="project-title">Python Workshop</h3>
+                            <h3 class="project-title">Python Workshop &#128013;</h3>
                             <h3><short>Role - Co-lead</short></h3>
                             <h3><short>From - Feb. 2024</short></h3>
                             <h4>Description</h4>
@@ -317,10 +317,10 @@
                                 <li>Python</li>
                                 <li>Public Speaking</li>
                             </ul>
-                            <button>More Details</button>
+                            <button id="py-workshop-button" onclick="toggle_more_details('py-workshop');">More Details</button>
                         </div>
                         <div id="sumo" class="experience-description">
-                            <h3 class="project-title">Sumo Bots</h3>
+                            <h3 class="project-title">Sumo Bots &#129302;</h3>
                             <h3><short>Role - Lead Programmer</short></h3>
                             <h3><short>From - Sept. 2024 to Nov. 2024</short></h3>
                             <h4>Description</h4>
@@ -331,7 +331,7 @@
                             <ul>
                                 <li>Cross-Disciplinary Collaboration</li>
                             </ul>
-                            <button>More Details</button>
+                            <button id="sumo-button" onclick="toggle_more_details('sumo');">More Details</button>
                         </div>
                     </div>
                 </div>
@@ -339,7 +339,7 @@
                     <h2>Class Projects</h2>
                     <div id="class" class="experience-information">
                         <div id="sd" class="experience-description">
-                            <h3 class="project-title">Senior Design</h3>
+                            <h3 class="project-title">Senior Design &#128268;</h3>
                             <h3><short>Role - Software Lead</short></h3>
                             <h3><short>From - Aug. 2025 to Ongoing</short></h3>
                             <h4>Description</h4>
@@ -356,10 +356,10 @@
                                 <li>Soldering</li>
                                 <li>Gantt Charts</li>
                             </ul>
-                            <button>More Details</button>
+                            <button id="sd-button" onclick="toggle_more_details('sd');">More Details</button>
                         </div>
                         <div id="pocket" class="experience-description">
-                            <h3 class="project-title">Pocket Professors</h3>
+                            <h3 class="project-title">Pocket Professors &#x1F3B4;</h3>
                             <h3><short>Role - Lead Frontend Developer</short></h3>
                             <h3><short>From - June 2025 to Aug. 2025</short></h3>
                             <h4>Description</h4>
@@ -374,10 +374,10 @@
                                 <li>Github</li>
                                 <li>Public Speaking</li>
                             </ul>
-                            <button>More Details</button>
+                            <button id="pocket-button" onclick="toggle_more_details('pocket');">More Details</button>
                         </div>
                         <div id="gorilla" class="experience-description">
-                            <h3 class="project-title">100 CS Majors vs. Gorilla</h3>
+                            <h3 class="project-title">100 CS Majors vs. Gorilla &#x1F98D;</h3>
                             <h3><short>Role - Lead Frontend Developer</short></h3>
                             <h3><short>From - May 2025 to June 2025</short></h3>
                             <h4>Description</h4>
@@ -389,10 +389,10 @@
                                 <li>Github</li>
                                 <li>Public Speaking</li>
                             </ul>
-                            <button>More Details</button>
+                            <button id="gorilla-button" onclick="toggle_more_details('gorilla');">More Details</button>
                         </div>
                         <div id="jd" class="experience-description">
-                            <h3 class="project-title">Junior Design</h3>
+                            <h3 class="project-title">Junior Design &#128267;</h3>
                             <h3><short>Role - Developer</short></h3>
                             <h3><short>From - May 2025 to Aug. 2025</short></h3>
                             <h4>Description</h4>
@@ -407,10 +407,10 @@
                                 <li>Circuit Design</li>
                                 <li>Fusion360</li>
                             </ul>
-                            <button>More Details</button>
+                            <button id="jd-button" onclick="toggle_more_details('jd');">More Details</button>
                         </div>
                         <div id="os" class="experience-description">
-                            <h3 class="project-title">Operating Systems</h3>
+                            <h3 class="project-title">Operating Systems &#128191;</h3>
                             <h3><short>Role - Developer</short></h3>
                             <h3><short>From - Aug. 2025 to Nov. 2025</short></h3>
                             <h4>Description</h4>
@@ -425,10 +425,10 @@
                                 <li>Github</li>
                                 <li>Memory Management</li>
                             </ul>
-                            <button>More Details</button>
+                            <button id="os-button" onclick="toggle_more_details('os');">More Details</button>
                         </div>
                         <div id="enterprise" class="experience-description">
-                            <h3 class="project-title">Enterprise Computing</h3>
+                            <h3 class="project-title">Enterprise Computing &#x1F3E2;&#x1F4BB;</h3>
                             <h3><short>Role - Developer</short></h3>
                             <h3><short>From - Aug. 2025 to Nov. 2025</short></h3>
                             <h4>Description</h4>
@@ -443,10 +443,10 @@
                                 <li>HTML / CSS / JS</li>
                                 <li>Multi-threading</li>
                             </ul>
-                            <button>More Details</button>
+                            <button id="enterprise-button" onclick="toggle_more_details('enterprise');">More Details</button>
                         </div>
                         <div id="alg" class="experience-description">
-                            <h3 class="project-title">Algorithms in Machine Learning</h3>
+                            <h3 class="project-title">Algorithms in Machine Learning &#129302;</h3>
                             <h3><short>Role - Developer</short></h3>
                             <h3><short>From - Aug. 2025 to Nov. 2025</short></h3>
                             <h4>Description</h4>
@@ -460,7 +460,7 @@
                                 <li>Hyperparameter Tuning</li>
                                 <li>Data Visualization</li>
                             </ul>
-                            <button>More Details</button>
+                            <button id="alg-button" onclick="toggle_more_details('alg');">More Details</button>
                         </div>
                     </div>
                 </div>

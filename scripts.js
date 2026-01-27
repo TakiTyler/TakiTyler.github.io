@@ -87,7 +87,7 @@ function set_color_mode(color){
         root_element.style.setProperty('--inner-inner-surface', '#dbdbdb');
         root_element.style.setProperty('--text', '#0f0f0f');
         root_element.style.setProperty('--links', '#1f1f1f');
-        root_element.style.setProperty('--borders', '#d9d9d9');
+        root_element.style.setProperty('--borders', '#0000001a');
         root_element.style.setProperty('--blue', '#6687e7');
         root_element.style.setProperty('--blue-light', '#8da5ed');
         root_element.style.setProperty('--blue-lightest', '#b3c3f3');
@@ -113,4 +113,10 @@ function set_color_mode(color){
         root_element.style.setProperty('--purple-light', '#e766e0');
         root_element.style.setProperty('--purple-lightest', '#ed8de8');
     }
+}
+
+// shows more details on my projects / work experience
+function toggle_more_details(div_id){
+    document.getElementById(div_id).classList.toggle("active");
+    document.getElementById(div_id + "-button").classList.toggle("active");
 }
