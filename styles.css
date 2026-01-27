@@ -401,6 +401,7 @@ main {
             ul {
                 list-style: none;
                 list-style-position: inside;
+                margin-bottom: 15px;
 
                 li {
                     display: inline-block;
@@ -457,8 +458,15 @@ main {
         }
 
         .experience-description {
+            display: flex;
+            flex-direction: column;
             grid-column: span 2;
             grid-row: span 1;
+
+            button{
+                max-width: 135px;
+                margin-top: auto;
+            }
         }
 
         @media (max-width: 1024px) {
