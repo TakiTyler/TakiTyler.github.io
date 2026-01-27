@@ -82,11 +82,11 @@ function set_color_mode(color){
         sun_icon.style.display = 'inline-block';
 
         root_element.style.setProperty('--background', '#ffffff');
-        root_element.style.setProperty('--surface', '#ededed');
-        root_element.style.setProperty('--inner-surface', '#dbdbdb');
-        root_element.style.setProperty('--inner-inner-surface', '#c9c9c9');
-        root_element.style.setProperty('--text', '#121212');
-        root_element.style.setProperty('--links', '#242424');
+        root_element.style.setProperty('--surface', '#f0f0f0');
+        root_element.style.setProperty('--inner-surface', '#e6e6e6');
+        root_element.style.setProperty('--inner-inner-surface', '#dbdbdb');
+        root_element.style.setProperty('--text', '#0f0f0f');
+        root_element.style.setProperty('--links', '#1f1f1f');
         root_element.style.setProperty('--borders', '#d9d9d9');
         root_element.style.setProperty('--blue', '#6687e7');
         root_element.style.setProperty('--blue-light', '#8da5ed');
@@ -98,11 +98,11 @@ function set_color_mode(color){
     else if(color == 'dark'){
         moon_icon.style.display = 'inline-block';
         sun_icon.style.display = 'none';
-        
-        root_element.style.setProperty('--background', '#121212');
-        root_element.style.setProperty('--surface', '#242424');
-        root_element.style.setProperty('--inner-surface', '#363636');
-        root_element.style.setProperty('--inner-inner-surface', '#474747');
+
+        root_element.style.setProperty('--background', '#0f0f0f');
+        root_element.style.setProperty('--surface', '#1f1f1f');
+        root_element.style.setProperty('--inner-surface', '#2e2e2e');
+        root_element.style.setProperty('--inner-inner-surface', '#3d3d3d');
         root_element.style.setProperty('--text', '#f2f2f2');
         root_element.style.setProperty('--links', '#d9d9d9');
         root_element.style.setProperty('--borders', '#ffffff1a');

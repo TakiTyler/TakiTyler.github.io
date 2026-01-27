@@ -7,10 +7,14 @@
 }
 
 :root {
-    --background: #121212;
-    --surface: #242424;
-    --inner-surface: #363636;
-    --inner-inner-surface: #474747;
+    /* --background: #121212; */
+    /* --surface: #242424; */
+    /* --inner-surface: #363636; */
+    /* --inner-inner-surface: #474747; */
+    --background: hsl(0, 0%, 6%);
+    --surface: hsl(0, 0%, 12%);
+    --inner-surface: hsl(0, 0%, 18%);
+    --inner-inner-surface: hsl(0, 0%, 24%);
     --text: #f2f2f2;
     --links: #d9d9d9;
     --borders: #ffffff1a;
@@ -188,7 +192,7 @@ main {
         justify-content: center;
         background-color: var(--surface);
         color: var(--text);
-        padding: 20px;
+        padding: 15px;
         border-radius: 25px;
         flex: 1;
         gap: 5px;
@@ -274,7 +278,7 @@ main {
                 align-self: center;
                 width: 100%;
                 height: 100%;
-                padding: 25px;
+                padding: 15px;
                 border-radius: 15px;
 
                 h2 {
@@ -284,19 +288,20 @@ main {
 
                 h3 {
                     text-align: center;
-                    font-size: 28px;
+                    margin-bottom: 5px;
                 }
 
                 ul {
                     list-style: none;
                     list-style-position: inside;
                     text-align: center;
-                    margin-bottom: 20px;
+                    margin-bottom: 15px;
 
                     li {
                         display: inline-block;
                         background-color: var(--blue);
-                        padding: 10px 20px;
+                        font-size: 15px;
+                        padding: 8px 16px;
                         border-radius: 15px;
                         margin: 5px;
                         box-shadow:
@@ -380,11 +385,11 @@ main {
         }
 
         h3 {
-            font-size: 30px;
+            font-size: 24px;
 
             short {
                 border-bottom: 0px;
-                font-size: 24px;
+                font-size: 20px;
             }
         }
 
@@ -399,6 +404,10 @@ main {
             border-radius: 15px;
             background-color: var(--inner-inner-surface);
 
+            p {
+                font-size: 18px;
+            }
+
             ul {
                 list-style: none;
                 list-style-position: inside;
@@ -408,10 +417,10 @@ main {
                     display: inline-block;
                     background-color: var(--purple-lightest);
                     color: #121212;
-                    padding: 5px 10px;
+                    padding: 4px 8px;
                     border-radius: 15px;
                     margin: 3px;
-                    font-size: 18px;
+                    font-size: 12px;
                     box-shadow:
                         0 1px 1px hsl(0deg 0% 0% / 0.075),
                         0 2px 2px hsl(0deg 0% 0% / 0.075),
@@ -423,27 +432,27 @@ main {
 
             button {
                 margin-top: 20px;
-                background-color: var(--blue);
-                box-shadow:
-                    0 1px 1px hsl(0deg 0% 0% / 0.075),
-                    0 2px 2px hsl(0deg 0% 0% / 0.075),
-                    0 4px 4px hsl(0deg 0% 0% / 0.075),
-                    0 8px 8px hsl(0deg 0% 0% / 0.075),
-                    0 16px 16px hsl(0deg 0% 0% / 0.075);
+                background: none;
+                padding: none;
+                border: none;
+                color: var(--blue);
 
                 &:hover {
                     cursor: pointer;
-                }
-
-                &:active {
-                    background-color: var(--purple-lightest);
                 }
             }
         }
 
         .company-info {
+            display: flex;
+            flex-direction: column;
             grid-column: span 4;
             grid-row: span 3;
+
+            button {
+                max-width: 100px;
+                margin-top: auto;
+            }
         }
 
         .company-logo {
@@ -465,12 +474,12 @@ main {
             grid-row: span 1;
 
             button {
-                max-width: 135px;
+                max-width: 100px;
                 margin-top: auto;
             }
         }
 
-        .project-title{
+        .project-title {
             border-bottom: 1px solid var(--borders);
         }
 
