@@ -1,3 +1,5 @@
+let modal = null;
+
 document.addEventListener('DOMContentLoaded', function () {
     find_color_preference();
 })
@@ -117,6 +119,14 @@ function set_color_mode(color){
 
 // shows more details on my projects / work experience
 function toggle_more_details(div_id){
-    document.getElementById(div_id).classList.toggle("active");
-    document.getElementById(div_id + "-button").classList.toggle("active");
+    // document.getElementById(div_id).classList.toggle("active");
+    // document.getElementById(div_id + "-button").classList.toggle("active");
+    modal = document.getElementById(div_id + "-modal");
+    modal.style.display = "block";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
