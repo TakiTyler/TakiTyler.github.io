@@ -383,6 +383,7 @@ main {
             font-size: 30px;
 
             short {
+                border-bottom: 0px;
                 font-size: 24px;
             }
         }
@@ -463,10 +464,14 @@ main {
             grid-column: span 2;
             grid-row: span 1;
 
-            button{
+            button {
                 max-width: 135px;
                 margin-top: auto;
             }
+        }
+
+        .project-title{
+            border-bottom: 1px solid var(--borders);
         }
 
         @media (max-width: 1024px) {
