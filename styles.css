@@ -484,6 +484,7 @@ main {
         }
 
         .modal-content {
+            background-color: var(--surface);
             position: relative;
             margin: auto;
             padding: 10px;
@@ -495,15 +496,49 @@ main {
             animation-duration: 0.4s;
 
             .modal-header {
-                /* background-color: red; */
+
+                background-color: var(--surface);
+                padding: 15px;
+
+                .exit-button {
+                    color: var(--text);
+                    float: right;
+                    font-size: 28px;
+                    font-weight: bold;
+                }
+
+                .exit-button:hover,
+                .exit-button:focus {
+                    color: var(--background);
+                    text-decoration: none;
+                    cursor: pointer;
+                }
             }
 
             .modal-body {
-                /* background-color: green; */
+                background-color: var(--inner-surface);
+                padding: 15px;
+
+                p {
+                    margin-bottom: 15px;
+                }
             }
 
             .modal-footer {
-                /* background-color: blue; */
+                margin-top: 10px;
+                background-color: var(--inner-surface);
+                padding: 15px;
+
+                .image-container {
+
+                    display: inline-block;
+                    background-color: var(--inner-surface);
+                    padding: 0px;
+
+                    img {
+                        width: 33%;
+                    }
+                }
             }
         }
 

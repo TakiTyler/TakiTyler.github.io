@@ -125,6 +125,10 @@ function toggle_more_details(div_id){
     modal.style.display = "block";
 }
 
+function exit_modal(){
+    modal.style.display = "none";
+}
+
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
