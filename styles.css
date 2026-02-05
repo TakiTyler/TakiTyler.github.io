@@ -112,6 +112,10 @@ header {
         flex-direction: column;
         align-items: center;
 
+        h1 {
+            font-size: 30px;
+        }
+
         nav {
             width: 100%;
             margin-top: 10px;
@@ -127,6 +131,7 @@ header {
                     border-radius: 0px;
 
                     a {
+                        font-size: 16px;
                         width: 100%;
 
                         &:hover {
@@ -177,10 +182,6 @@ main {
             display: block;
             font-weight: 100;
         }
-
-        @media (max-width:1024px) {
-            font-size: 48px;
-        }
     }
 
     .yapping,
@@ -201,6 +202,17 @@ main {
             font-size: 24px;
             margin-top: 10px;
         }
+
+        @media (max-width: 768px) {
+
+            h2 {
+                font-size: 28px;
+            }
+
+            p {
+                font-size: 16px
+            }
+        }
     }
 
     .about-me,
@@ -211,6 +223,13 @@ main {
             text-align: center;
             margin-bottom: 12px;
         }
+
+        @media (max-width: 768px) {
+
+            h2 {
+                font-size: 28px;
+            }
+        }
     }
 
     .personal-links {
@@ -220,6 +239,11 @@ main {
         a {
             margin-right: 10px;
             margin-left: 10px;
+        }
+
+        @media (max-width: 768px) {
+            margin-top: 10px;
+            margin-bottom: 5px;
         }
     }
 
@@ -243,6 +267,14 @@ main {
                 0 8px 8px hsl(0deg 0% 0% / 0.075),
                 0 16px 16px hsl(0deg 0% 0% / 0.075);
         }
+
+        @media (max-width: 768px) {
+
+            img {
+                max-width: 180px;
+            }
+
+        }
     }
 
     .socials {
@@ -262,6 +294,15 @@ main {
 
             img {
                 width: 45px;
+            }
+        }
+
+
+        @media (max-width: 768px) {
+            a {
+                img {
+                    width: 30px;
+                }
             }
         }
     }
@@ -300,7 +341,7 @@ main {
                     li {
                         display: inline-block;
                         background-color: var(--blue);
-                        font-size: 15px;
+                        font-size: 16px;
                         padding: 8px 16px;
                         border-radius: 15px;
                         margin: 5px;
@@ -333,6 +374,30 @@ main {
                 grid-template-columns: repeat(1, 1fr);
                 grid-template-rows: repeat(1, 1fr);
             }
+        }
+
+
+        @media (max-width: 768px) {
+
+            .skill-list {
+                .skill-selection {
+                    h2{
+                        font-size: 26px;
+                    }
+                    
+                    h3{
+                        font-size: 24px;
+                    }
+
+                    ul{
+                        li{
+                            font-size: 14px;
+                            padding: 5px 10px;
+                        }
+                    }
+                }
+            }
+
         }
     }
 
@@ -570,7 +635,7 @@ main {
             }
         }
 
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
             p {
                 font-size: 12px;
             }
@@ -642,7 +707,7 @@ main {
         }
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
         padding: 5px 10px;
         font-size: 12px;
     }
