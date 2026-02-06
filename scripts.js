@@ -1,4 +1,5 @@
 let modal = null;
+let large_image = null;
 
 document.addEventListener('DOMContentLoaded', function () {
     find_color_preference();
@@ -129,8 +130,20 @@ function exit_modal(){
     modal.style.display = "none";
 }
 
+function view_image(img_id){
+    large_image = document.getElementById(img_id);
+    large_image.style.display = "flex";
+}
+
+function remove_image(){
+    large_image.style.display = "none";
+}
+
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
+  }
+  if (event.target == large_image){
+    large_image.style.display = "none";
   }
 }

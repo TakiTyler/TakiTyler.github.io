@@ -381,16 +381,16 @@ main {
 
             .skill-list {
                 .skill-selection {
-                    h2{
+                    h2 {
                         font-size: 26px;
                     }
-                    
-                    h3{
+
+                    h3 {
                         font-size: 24px;
                     }
 
-                    ul{
-                        li{
+                    ul {
+                        li {
                             font-size: 14px;
                             padding: 5px 10px;
                         }
@@ -594,15 +594,99 @@ main {
                 background-color: var(--inner-surface);
                 padding: 15px;
 
-                .image-container {
-
-                    display: inline-block;
+                .container {
                     background-color: var(--inner-surface);
+                    display: inline-block;
                     padding: 0px;
+                    width: 100%;
+
+                    .image-container {
+                        background-color: var(--inner-surface);
+                        display: inline-block;
+                        padding: 0px;
+                        width: 33%;
+
+                        img {
+                            width: 100%;
+                        }
+
+                        img:hover {
+                            cursor: pointer;
+                        }
+
+                        .caption {
+                            position: absolute;
+                            bottom: 5px;
+                            background: rgb(0, 0, 0);
+                            background: rgba(0, 0, 0, 0.5);
+                            color: #f1f1f1;
+                            width: 100%;
+                            transition: .5s ease;
+                            opacity: 0;
+                            color: white;
+                            font-size: 20px;
+                            padding: 20px;
+                            border-radius: 0px;
+                            text-align: center;
+                        }
+                    }
+
+                    .image-container:hover .caption {
+                        opacity: 1;
+                    }
+                }
+
+
+                .large-img {
+                    display: none;
+                    position: fixed;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 2;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    overflow: auto;
+                    margin: auto;
+                    background-color: #00000066;
+                    border-radius: 0px;
 
                     img {
-                        width: 33%;
+                        display: flex;
+                        justify-content: center;
+                        align-content: center;
+                        margin: auto;
+                        width: 66%;
                     }
+
+                    .caption {
+                        position: absolute;
+                        bottom: 0;
+                        background: rgb(0, 0, 0);
+                        background: rgba(0, 0, 0, 0.75);
+                        color: #f1f1f1;
+                        width: 60%;
+                        transition: .5s ease;
+                        opacity: 1;
+                        color: white;
+                        font-size: 20px;
+                        border-radius: 0px;
+                        text-align: center;
+                    }
+
+                    .exit-button {
+                        position: absolute;
+                        top: 25px;
+                        right: 45px;
+                    }
+
+                    .exit-button:hover {
+                        cursor: pointer;
+                        color: var(--background);
+                        text-decoration: none;
+                    }
+
                 }
             }
         }
